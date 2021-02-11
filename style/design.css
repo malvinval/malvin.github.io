@@ -1,0 +1,620 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+      box-sizing: border-box;
+}
+
+
+.content-header {
+      font-family: 'Poppins', sans-serif;
+      font-size: 45px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-between;
+      
+}
+
+.header {
+      /*width: 100%;*/
+      /*max-height: 200px;*/
+      /*display: flex;*/
+      margin-top: 50px;
+      margin-bottom: 100px;
+}
+
+.content-header h1 {
+      max-width: 850px;
+      text-indent: 40px;
+      color: #1b2a42;
+}
+
+.nav ul {
+      display: flex;
+      margin-right: 70px;
+}
+
+li {
+      line-height: 45px;
+}
+
+li a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 50px;
+      font-size: 21px;
+      color: #1b2a42;
+      opacity: 0.6;
+      transition: .1s ease !important;
+}
+
+li a:hover {
+      color: crimson;
+      transform: scale(1.15);
+      border-bottom: 3px solid crimson;
+      border-radius: 1px;
+}
+
+
+
+@keyframes malvin {
+      0%   {color: #314e7d;}
+      25%  {color: crimson;}
+      50%  {color: #314e7d;}
+      75%  {color: crimson;}
+      100%  {color: #314e7d;}
+}
+    
+    /* The element to apply the animation to */
+.content-header h1 {
+      animation: malvin infinite 5s;
+}
+
+
+
+
+.chest {
+      display: flex;
+      justify-content: space-between;
+}
+
+.job {
+      margin-top: 40px;
+}
+
+.job h1 {
+      font-size: 70px;
+      font-family: 'Prompt', sans-serif;
+      margin: 10px 40px;
+      color: #314e7d;
+}
+
+.chest h1 span {
+      color: #cc398e;
+}
+
+
+body {
+      background-image: url(../img/wave-opacity.png);
+      object-fit: cover;
+      background-size: 100%;
+      background-repeat: no-repeat;
+}
+
+.wavy {
+      max-height: 600px;
+      max-width: 600px;
+      margin: 0px 110px 0 0;
+}
+
+.open {
+      margin: 40px;
+}
+
+.open p {
+      font-family: 'Montserrat', sans-serif;
+      /*color: #314e7d;*/
+      color: black;
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      word-spacing: 2px;
+      opacity: 0.4;
+      margin-bottom: 13px;
+}
+
+.open h3 {
+      font-size: 19px;
+      color: black;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      opacity: 1;
+      font-weight: bolder;
+      font-family: 'Hammersmith One', sans-serif;
+      margin-bottom: 65px;
+}
+
+.open a {
+      border: 1px solid #314e7d;
+      font-size: 28px;
+      padding: 10px 40px;
+      font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: #314e7d;
+      transition: .3s ease !important;
+}
+
+.open a:hover {
+      background-color: #314e7d;
+      color: white;
+}
+
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+/*MEDIA QUERY UNTUK MINIMAL 768PX*/
+
+@media (min-width: 768px) and (max-width: 1199px) {
+      body {
+            background-image: none;
+             
+      }
+
+      .content-header {
+            flex-wrap: wrap;
+      }
+
+      .content-header h1 {
+            font-size: 30px;
+            margin-left: 10px;
+      }
+
+      .job h1 {
+            font-size: 50px;
+      }
+
+      .wavy {
+            max-height: 300px;
+            max-width: 300px;
+            margin-top: 30px;
+      }
+
+      .open a {
+            border: 1px solid #314e7d;
+            font-size: 24px;
+            padding: 8px 30px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #314e7d;
+            transition: .3s ease !important;
+      }
+
+      .open h3 {
+            font-size: 19px;
+            color: black;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            opacity: 1;
+            font-weight: bolder;
+            font-family: 'Hammersmith One', sans-serif;
+            margin-bottom: 45px;
+      }
+
+      .open p {
+            font-size: 20px;
+      }
+
+      .content-header h1 {
+            max-width: 768px;
+            color: #1b2a42;
+      }
+      .wavy-2 {
+            display: none;
+      }
+
+      .chest {
+            margin-top: 100px;
+      }
+}
+
+
+
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY UNTUK MINIMAL 1200PX*/
+
+@media screen and (min-width: 1200px) {
+      
+
+
+
+      * {
+            box-sizing: border-box;
+      }
+      
+      
+      .content-header {
+            font-family: 'Poppins', sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            display: flex;
+            justify-content: space-between;
+            
+      }
+      
+      .header {
+            /*width: 100%;*/
+            /*max-height: 200px;*/
+            /*display: flex;*/
+            margin-top: 50px;
+            margin-bottom: 100px;
+      }
+      
+      .content-header h1 {
+            max-width: 850px;
+            text-indent: 40px;
+            color: #1b2a42;
+      }
+      
+      .nav ul {
+            display: flex;
+            margin-right: 70px;
+      }
+      
+      li {
+            line-height: 45px;
+      }
+      
+      li a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 50px;
+            font-size: 21px;
+            color: #1b2a42;
+            opacity: 0.6;
+            transition: .3s ease !important;
+      }
+      
+      li a:hover {
+            color: crimson;
+            transform: scale(1.15);
+            border-bottom: 3px solid crimson;
+            border-radius: 1px;
+      }
+      
+      
+      
+      @keyframes malvin {
+            0%   {color: #314e7d;}
+            25%  {color: crimson;}
+            50%  {color: #314e7d;}
+            75%  {color: crimson;}
+            100%  {color: #314e7d;}
+      }
+          
+          /* The element to apply the animation to */
+      .content-header h1 {
+            animation: malvin infinite 5s;
+      }
+      
+      
+      
+      
+      .chest {
+            display: flex;
+            justify-content: space-between;
+      }
+      
+      .job {
+            margin-top: 40px;
+      }
+      
+      .job h1 {
+            font-size: 70px;
+            font-family: 'Prompt', sans-serif;
+            margin: 10px 40px;
+            color: #314e7d;
+      }
+      
+      .chest h1 span {
+            color: #cc398e;
+      }
+      
+      
+      body {
+            background-image: url(../img/wave-opacity.png);
+            object-fit: cover;
+            background-size: 100%;
+            background-repeat: no-repeat;
+      }
+      
+      .wavy {
+            max-height: 600px;
+            max-width: 600px;
+            margin: 0px 110px 0 0;
+      }
+      
+      .open {
+            margin: 40px;
+      }
+      
+      .open p {
+            font-family: 'Montserrat', sans-serif;
+            /*color: #314e7d;*/
+            color: black;
+            font-size: 25px;
+            letter-spacing: 0.5px;
+            word-spacing: 2px;
+            opacity: 0.4;
+            margin-bottom: 13px;
+      }
+      
+      .open h3 {
+            font-size: 19px;
+            color: black;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            opacity: 1;
+            font-weight: bolder;
+            font-family: 'Hammersmith One', sans-serif;
+            margin-bottom: 65px;
+      }
+      
+      .open a {
+            border: 1px solid #314e7d;
+            font-size: 28px;
+            padding: 10px 40px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #314e7d;
+            transition: .3s ease !important;
+      }
+      
+      .open a:hover {
+            background-color: #314e7d;
+            color: white;
+      }
+
+      .wavy-2 {
+            display: none;
+      }
+}
+
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+/***************************************************************/
+
+
+@media (min-width: 440px) and (max-width: 767px) {
+      
+      .content-header {
+            flex-wrap: wrap;
+            justify-content: space-between;
+      }
+
+      .content-header h1 {
+            font-size: 35px;
+            /*flex: 1;
+            order: 2;*/
+            display: none;
+      }
+
+      .nav ul {
+            display: flex;
+            margin-right: 40px;
+            flex-wrap: wrap;
+      }
+
+      .nav {
+            width: 150px;
+      }
+      
+      li a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 20px;
+            font-size: 18px;
+            color: #1b2a42;
+            opacity: 0.6;
+            transition: .3s ease !important;
+      }
+
+      .job {
+            margin: 0;
+      }
+      
+      .job h1 {
+            font-size: 55px;
+            font-family: 'Prompt', sans-serif;
+            margin: 5px 20px;
+            color: #314e7d;
+      }
+
+      .wavy {
+            display: none;
+      }
+
+      .wavy-2 {
+            width: 250px;
+            height: 250px;
+            margin: 0 20px;
+      }
+
+      body {
+            background-image: none;
+      }
+
+      .open p {
+            font-family: 'Montserrat', sans-serif;
+            /*color: #314e7d;*/
+            color: black;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            opacity: 0.4;
+            margin-bottom: 10px;
+      }
+      
+      .open h3 {
+            font-size: 17px;
+            color: black;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            opacity: 1;
+            font-weight: bolder;
+            font-family: 'Hammersmith One', sans-serif;
+            margin-bottom: 45px;
+      }
+
+      .open {
+            margin: 20px;
+      }
+
+      .open a {
+            border: 1px solid #314e7d;
+            font-size: 22px;
+            padding: 8px 35px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #314e7d;
+            transition: .3s ease !important;
+      }
+}
+
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+
+
+@media (min-width: 320px) and (max-width: 439px) {
+
+      .wavy-2 {
+            display: none;
+      }
+
+      body {
+            background-image: url(../img/whitebook-HD-opacity\(2\).png);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: 200% 100%;
+      }
+
+      .content-header h1 {
+            font-size: 27px;
+            text-indent: 20px;
+            max-width: 200px;
+      }
+
+      .content-header {
+            flex-wrap: wrap;
+            max-width: 200px;
+      }
+
+      .nav ul {
+            display: flex;
+            margin-right: 40px;
+            flex-wrap: wrap;
+      }
+
+      .nav {
+            width: 150px;
+      }
+      
+      li a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 20px;
+            font-size: 18px;
+            color: #1b2a42;
+            opacity: 0.6;
+            transition: .3s ease !important;
+      }
+
+      .wavy {
+            display: none;
+      }
+      
+      .job h1 {
+            font-size: 40px;
+            text-indent: none;
+            margin-left: 20px;
+      }
+      
+      .job {
+            margin-top: 0;
+      }
+
+      .open p {
+            font-size: 19px;
+      }
+
+      .open {
+            margin-left: 20px;
+      }
+
+      .open .CV {
+            font-size: 20px;
+            padding: 10px 30px;
+      }
+}
+

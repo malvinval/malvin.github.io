@@ -1,0 +1,418 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+      box-sizing: border-box;
+}
+
+
+
+
+.upper-heading {
+      font-family: 'Poppins', sans-serif;
+      font-size: 45px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-between;
+      
+}
+
+.upper {
+      /*width: 100%;*/
+      /*max-height: 200px;*/
+      /*display: flex;*/
+      margin-top: 50px;
+      margin-bottom: 100px;
+}
+
+.upper-heading h1 {
+      max-width: 850px;
+      text-indent: 40px;
+      color: #1b2a42;
+}
+
+.upper-nav ul {
+      display: flex;
+      margin-right: 70px;
+}
+
+li {
+      line-height: 45px;
+}
+
+li a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 50px;
+      font-size: 21px;
+      color: #1b2a42;
+      opacity: 0.6;
+      transition: .1s ease !important;
+}
+
+li a:hover {
+      color: crimson;
+      transform: scale(1.15);
+      border-bottom: 3px solid crimson;
+      border-radius: 1px;
+}
+
+
+
+@keyframes malvin {
+      0%   {color: #314e7d;}
+      25%  {color: crimson;}
+      50%  {color: #314e7d;}
+      75%  {color: crimson;}
+      100%  {color: #314e7d;}
+}
+    
+    /* The element to apply the animation to */
+.upper-heading h1 {
+      animation: malvin infinite 5s;
+}
+
+body {
+      background-image: url(../img/wave-opacity.png);
+      object-fit: cover;
+      background-size: 100%;
+      background-repeat: no-repeat;
+}
+
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+
+.beef {
+      max-width: 95%;
+      display: flex;
+      margin: auto;
+      justify-content: center;
+}
+
+/*.wavy-ui {
+      max-width: 500px;
+      height: 500px;
+      margin: 30px;
+}*/
+
+.stomach {
+      display: flex;
+      justify-content: space-between;
+}
+
+.left {
+      width: 1100px;
+}
+
+.head h1 {
+      text-align: center;
+      text-align: center;
+      font-size: 70px;
+      font-family: 'Prompt', sans-serif;
+      color: #314e7d;
+      margin: 50px;
+      letter-spacing: 1px;
+}
+
+.head span {
+      color: crimson;
+}
+
+.email, .instagram, .phone {
+      border: 0.5px solid  #314e7d;
+      border-radius: 10px;
+      width: 280px;
+      height: 180px;
+}
+
+.email h1, .instagram h1, .phone h1 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      letter-spacing: 1px;
+      color: #314e7d;
+}
+
+.email-button, .ig-button, .phone-button {
+      text-decoration: none;
+      transition: .2s ease !important;
+}
+
+.email-dunno {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50px;
+      margin: auto;
+      padding: 30px;
+}
+
+.mail-icon {
+      width: 80px;
+      height: 50px;
+      margin-top: 30px;
+}
+
+.instagram-dunno {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50px;
+      margin: auto;
+      padding: 30px;
+}
+
+.ig-icon {
+      width: 80px;
+      height: 50px;
+      margin-top: 30px;
+}
+
+.phone-dunno {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 50px;
+      margin: auto;
+      padding: 30px;
+}
+
+.phone-icon {
+      width: 80px;
+      height: 50px;
+      margin-top: 30px;
+}
+
+.email-button:hover, .ig-button:hover, .phone-button:hover {
+      transform: scale(1.05);
+      box-shadow: 7px 7px rgb(216, 216, 216);
+      border-radius: 10px;
+}
+
+/********************************************************/
+/********************************************************/
+/********************************************************/
+/********************************************************/
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+
+      .upper-heading {
+            flex-wrap: wrap;
+      }
+
+      body {
+            background-image: url(../img/whitebook-HD-opacity\(2\).png);
+            background-repeat: no-repeat;
+            background-size: 140% 1000px;   
+      }
+
+      .upper-heading h1 {
+            max-width: 768px;
+            text-indent: 50px;
+            color: #1b2a42;
+            text-align: center;
+            font-size: 35px;
+      }
+
+      .upper-nav {
+            margin-top: 30px;
+            max-width: 768px;
+      }
+
+      .upper-nav ul li a {
+            font-size: 20px;
+      }
+
+      .stomach {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 670px;
+            margin: auto;
+      }
+
+      .email-button, .ig-button, .phone-button {
+            /*border: 0.5px solid  #314e7d;*/
+            border-radius: 10px;
+            width: 280px;
+            height: 180px;
+            margin: 10px;
+      }
+}
+
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+
+      .upper-heading h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+      }
+
+      .upper-heading {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 300px;
+      }
+
+      .upper-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      .upper-nav {
+            width: 150px;
+      }
+
+      body {
+            background-image: url(../img/whitebook-HD-opacity\(2\).png);
+            background-repeat: no-repeat;
+            background-size: 200% 100%;
+      }
+
+      .head h1 {
+            font-size: 40px;
+      }
+
+
+      .stomach {
+            flex-wrap: wrap;
+      }
+
+      .email-button, .ig-button, .phone-button {
+            margin: auto;
+            margin-bottom: 15px;
+      }
+}
+
+
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+
+
+@media (min-width: 320px) and (max-width: 439px) {
+
+
+      body {
+            background-image: url(../img/whitebook-HD-opacity\(2\).png);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: 200% 100%;
+      }
+
+      .upper-heading h1 {
+            font-size: 27px;
+            text-indent: 20px;
+            max-width: 200px;
+      }
+
+      .upper-heading {
+            flex-wrap: wrap;
+            max-width: 200px;
+      }
+
+      .upper-nav ul {
+            display: flex;
+            margin-right: 40px;
+            flex-wrap: wrap;
+      }
+
+      .upper-nav {
+            width: 150px;
+      }
+      
+      li a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 20px;
+            font-size: 18px;
+            color: #1b2a42;
+            opacity: 0.6;
+            transition: .3s ease !important;
+      }
+
+      .head h1 {
+            font-size: 40px;
+      }
+
+      .stomach {
+            flex-wrap: wrap;
+      }
+
+      .email-button, .ig-button, .phone-button {
+            /*width: 270px;
+            height: 250px;*/
+            width: 280px;
+            height: 180px;
+            margin: auto;
+            margin-top: 20px;
+      }
+
+      .mail-icon {
+            width: 55px;
+            height: 40px;
+      }
+
+      .email, .instagram, .phone {
+            width: 280px;
+            height: 180px;
+      }
+}
+
+
+
